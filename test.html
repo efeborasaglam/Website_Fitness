@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anmeldung</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.language-selection, .cookie-disclaimer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+}
+
+.cookie-disclaimer {
+    font-weight: bold;
+}
+</style>
+<body>
+    <div class="container">
+        <h1>Anmeldung</h1>
+        <form action="/login" method="post"> <label for="username">Anmeldename oder E-Mail:</label> <input type="text"
+                id="username" name="username" required> <br> <label for="password">Kennwort:</label> <input
+                type="password" id="password" name="password" required> <br> <input type="submit" value="Login"> </form>
+        <a href="/password_reset">Kennwort vergessen?</a> <br> <a href="/signup">Neues Konto anlegen</a> <br> <a
+            href="/guest_login">Anmelden als Gast</a> <br>
+        <div class="language-selection"> <input type="radio" id="de" name="language" value="de" checked> <label
+                for="de">Deutsch (de)</label> </div> <br> <a href="/about">Für den vollen Zugriff auf die Website
+            brauchen Sie ein Nutzerkonto.</a> <br> <a href="/new_here">Neu auf dieser Webseite?</a> <br>
+        <div class="cookie-disclaimer"> Cookie-Hinweis </div>
+    </div>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie-Hinweis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cookie-Hinweis</h1>
+        <p>Wir verwenden Cookies, um Ihnen den bestmöglichen Service auf unserer Website zu bieten. Durch die weitere
+            Nutzung dieser Website stimmen Sie der Verwendung von Cookies zu.</p>
+    </div>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurse für Gäste</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Kurse für Gäste</h1>
+        <p>Einige Kurse sind für Gäste offen. Um diese zu finden, gehen Sie bitte in den Kursbereich und suchen Sie nach
+            öffentlichen oder freien Kursen.</p>
+    </div>
+</body>
